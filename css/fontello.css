@@ -60,6 +60,9 @@
   background: black;
   height: 45px;
   width: 100%;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: flex-start;
 }
 .nav img {
   position: relative;
@@ -85,8 +88,36 @@
   font-size: 25px;
   margin-top: 2.5%;
   margin-bottom: 2.5%;
-
   margin-right: 3%;
   display: block;
   float: right;
 } /* '' */
+.site-menu {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: 1.8%;
+  height: 100%;
+  background: black;
+}
+.site-menu ul {
+  list-style-type: none;
+  padding: 0;
+  width: 180px;
+}
+.site-menu li {
+  background: orange;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.site-menu a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  padding-left: 5%;
+}
