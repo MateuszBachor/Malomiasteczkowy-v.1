@@ -21,10 +21,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.body {
-  margin: 0;
+body {
+  margin: 0px;
   padding: 0;
   overflow: hidden;
+  height: 10000px;
+  width: 360px;
+  background-color: black;
 }
 /*.wrapper {
   background: black;
@@ -69,6 +72,7 @@ header {
   display: flex;
   float: right;
   background: black;
+  border-radius: 5px;
 }
 .icon-menu-outline:before {
   content: "\e801";
@@ -83,13 +87,15 @@ header {
   position: absolute;
   right: 0;
   padding-left: 5%;
-  margin-right: 2.2%;
+  margin-right: 2%;
   margin-top: 16%;
   width: 150px;
   background: black;
   top: 8px;
   height: 55%;
+  transition-property: transform;
   transform: translateX(100%);
+  transition: 1s transform ease-in-out;
 }
 .site-menu ul {
   list-style-type: none;
@@ -100,14 +106,16 @@ header {
 }
 .site-menu li {
   background: orange;
-  color: rgb(255, 230, 0);
   margin-top: 10%;
   padding-right: 1%;
   padding-left: 5%;
   height: 30px;
   width: auto;
   display: flex;
-  flex-basis: 70%;
+  flex-basis: 100%;
+  border-radius: 5px;
+  border-color: brown;
+  border-style: solid;
 }
 .site-menu a {
   box-sizing: border-box;
@@ -126,6 +134,7 @@ header {
   color: black;
   border-radius: 5px;
 }
-.button:focus ~ .site-menu {
+.button:focus ~ .site-menu,
+.site-menu:hover {
   transform: translateX(0);
 }
